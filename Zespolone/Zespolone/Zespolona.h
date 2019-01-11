@@ -11,8 +11,8 @@ public:
 	zespolona();
 	zespolona(double rzeczywista, double urojona);
 	// potrzebne metody i operatory
-	double getRzeczywista();
-	double getUrojona();
+	double getRzeczywista() const;
+	double getUrojona() const;
 };
 
 // 2A
@@ -28,6 +28,18 @@ public:
 	tabzes& operator =(const tabzes& tablica); // 2C
 	tabzes& operator =(tabzes && tablica); // 2C
 	tabzes& operator+=(const zespolona &z); // 2D
-	
 
+	zespolona * getTablica() const;
+	int getRozmiar() const;
+};
+
+// 3
+
+class kolzes : public tabzes // przechowuje kolejke priorytetowych
+	// liczb zespolonych uszeregowanych w kolejnosci rosnacych wartosci
+	// bezwzglednych liczb zespolonych
+{
+public:
+	friend std::istream& operator>> (std::istream & is, const kolzes& kolejka);
+	kolzes& operator += (const zespolona &z);
 };
