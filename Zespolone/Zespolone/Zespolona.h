@@ -11,7 +11,8 @@ public:
 	zespolona();
 	zespolona(double rzeczywista, double urojona);
 	// potrzebne metody i operatory
-
+	double getRzeczywista();
+	double getUrojona();
 };
 
 // 2A
