@@ -5,6 +5,6 @@ class tabzes
 public:
 	tabzes();
 	~tabzes();
-	Zespolona liczbyZespolone[];
+	Zespolona * liczbyZespolone[];
 };
 
