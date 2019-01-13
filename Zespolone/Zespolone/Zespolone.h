@@ -12,7 +12,8 @@ private:
 public:
 	zespolona() {};
 	zespolona(double rzeczywista, double urojona);
-	double getRzeczywista();
+	double getRzeczywista() const;
+	double getUrojona() const;
 };
 
 
@@ -23,6 +24,10 @@ private:
 
 public:
 	tabzes(int rozmiar);
+
+	zespolona* getTablica();
+	int getRozmiar();
+
 	zespolona& operator[](const int);
 	tabzes& operator= (const tabzes& tablica);
 	tabzes& operator= (tabzes&&tablica);
@@ -31,5 +36,13 @@ public:
 
 
 class kolzes :public tabzes {
+public:
+	friend std::istream& operator>>(std::istream& is, const kolzes& kolejka);
+	kolzes& operator+=(const zespolona &z);
+};
 
+struct liczba {
+	zespolona head;
+	zespolona *pNext;
+	liczba(const k &ctr) :t(ctr), next(nullptr) {};
 };
