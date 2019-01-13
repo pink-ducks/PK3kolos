@@ -2,6 +2,7 @@
 1) ZWIERZAK 2) LIFO lista lub tablica 3) posortowana
 1) ZESPOLONE 2) tablica dynamiczna 3) kolejka posortowana
 1) WIERSZ 2) dwukierunkowa 3) z numerem wiersza aktualnego
+1) WIERSZ 2) jednokierunkowa FIFO ) z numerem wiersza aktualnego
 1) PLATNOSC 2) LIFO tablica dynamiczna 3) posortowana
 1) OSOBA 2) LIFO jednokierunkowa 3) posortowana
 1) WYMIERNA 2) LIFO dwukierunkowa 3) zbiór bez powtórzeñ
